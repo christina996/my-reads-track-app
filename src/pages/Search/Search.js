@@ -36,7 +36,7 @@ const Search = () => {
       setBooks([]);
       setShowNoDataFound(false);
     }
-  }, [debounceSearchValue, booksObj]);
+  }, [debounceSearchValue]);
 
   const handleSearch = (e) => {
     setQuery(e.target.value);
