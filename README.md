@@ -1,7 +1,9 @@
 # My Reads Tracking App 
-## Egypt FWD React Development Cross-Skilling Udacity Nano Degree
+
+Egypt FWD React Development Cross-Skilling Udacity Nano Degree Project.
 
 ## Overview:
+
 In the My Reads project, you'll create a bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read and also you can go to the search page to search for any book.
 
 ## Packages:
