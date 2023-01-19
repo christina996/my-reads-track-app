@@ -16,7 +16,7 @@ In the My Reads project, you'll create a bookshelf app that allows you to select
 ## Getting Started:
 After clone this repo, go to the project directory then run this scripts
 
-### `npm i` or `npm install`
+ `npm i` or `npm install`
 
 then
-### `npm start`
+`npm start`
