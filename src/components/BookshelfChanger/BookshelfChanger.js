@@ -5,11 +5,12 @@ import { PropTypes } from "prop-types";
 import { updateBookshelf } from "../../redux/features/booksSlice";
 
 import { shelfCategory } from "../../constants/booksEnum";
+import bookConfig from "../../configs/books.config.json";
 import "./BookshelfChanger.css";
 
 /**
  * Bookshelf changer ddl component
- * @param {Object} book 
+ * @param {Object} book
  */
 const BookshelfChanger = ({ book }) => {
   const [bookshelf, setBookshelf] = useState(shelfCategory.NONE);
@@ -32,10 +33,11 @@ const BookshelfChanger = ({ book }) => {
         <option value="" disabled>
           Move to...
         </option>
-        <option value={shelfCategory.CURRENT_READING}>Currently Reading</option>
-        <option value={shelfCategory.WANT_TO_READ}>Want to Read</option>
-        <option value={shelfCategory.READ}>Read</option>
-        <option value={shelfCategory.NONE}>None</option>
+        {bookConfig.shelves.map((shelf) => (
+          <option key={shelf.id} value={shelf.shelfName}>
+            {shelf.shelfDisplayName}
+          </option>
+        ))}
       </select>
     </div>
   );

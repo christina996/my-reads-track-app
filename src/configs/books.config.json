@@ -1,5 +1,27 @@
 {
   "staticFieldsNames": {
     "id": "id"
-  }
+  },
+  "shelves": [
+    {
+      "id": "1",
+      "shelfName": "currentReading",
+      "shelfDisplayName": "Currently Reading"
+    },
+    {
+      "id": "2",
+      "shelfName": "wantToRead",
+      "shelfDisplayName": "Want to Read"
+    },
+    {
+      "id": "3",
+      "shelfName": "read",
+      "shelfDisplayName": "Read"
+    },
+    {
+      "id": "4",
+      "shelfName": "none",
+      "shelfDisplayName": "None"
+    }
+  ]
 }
